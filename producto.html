@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIRTS CODE STORE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__left">
+            <a href="index.html">
+                <img class="header__logo" src="img/logo.webp" alt="Logotipo">
+            </a> 
+        </div>
+        <div class="header__right">
+            <a href="carrito.html" class="carro">
+                <img src="img/carrito.webp" alt="Carrito de compras">
+                <span id="carrito-count" class="carrito__count">0</span> <!-- Contador -->
+            </a>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="../index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1 id="producto-nombre"></h1>
+        <div class="camisa">
+            <img id="producto-imagen" class="camisa__imagen" src="" alt="Imagen del Producto">
+            <div class="camisa__contenido">
+                <p id="descripcion"></p>
+                <form id="formulario" class="formulario">
+                    <select id="producto-talle" class="formulario__campo">
+                        <option disabled selected>--Seleccionar Talle--</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Extra Large</option>
+                    </select>
+                    <input id="cantidad" class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input id="agregar-carrito" class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">SHIRTS CODE STORE 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
